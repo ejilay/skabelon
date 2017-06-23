@@ -10,5 +10,5 @@ server {
         location @handle_redirects {
            set $orig_loc $upstream_http_location;
            proxy_pass $orig_loc;
-         }
+        }
 }
